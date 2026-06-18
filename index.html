@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<title> Mortgage Calculator </title>
+
+</head>
+<body>
+<div class="content">
+    
+ <h1> Fixed Rate Mortgage Calculator </h1> 
+
+    
+    <form id="mortgageform" action="javascript:void(0)" onsumbmit="calcmortgage()">
+    <div class="principal"><p> Principal Amount</p>
+     <input type="number" id="principal" placeholder="Enter Principal Amount" min="1" required>  
+</div>
+   
+<div class="rate">
+    <p> Interest Rate </p>
+    <input type="number" id="rate" placeholder="Enter Interest Rate" min="0.01" step="0.01" required>
+    </div>
+    
+    <div class="years">
+        <p> Years </p>
+    <input type="number" id="years" placeholder="Enter Years" min="1" required>
+</div>
+<div class="calculate">
+    <p> <input type="submit" value="Calculate" onclick="calcmortgage()"></p>
+</div>
+
+
+
+</form>
+   <div class="summary">
+        <p>Result: <span id="result"></span> </p>
+</div>
+
+<script src="myscript.js"></script>
+
+
+<div> <img src="House.avif" alt="House"> </div>
+
+
+
+
+<footer>
+<p>View my code on <a href="https://github.com/Cayden0713/Project-2">GitHub</a></p>
+
+</body>
+
+
+
+
+
+
+
+
+</html>
